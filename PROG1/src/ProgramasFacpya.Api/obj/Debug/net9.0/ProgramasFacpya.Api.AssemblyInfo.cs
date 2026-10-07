@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProgramasFacpya.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ed6094e542bfcce595bd0fc03f577a495ca24bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ced85f1b9280eebc10039b4e25053d566e8b5c4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProgramasFacpya.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProgramasFacpya.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
