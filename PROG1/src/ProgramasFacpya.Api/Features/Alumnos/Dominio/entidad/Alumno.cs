@@ -10,5 +10,7 @@ public class Alumno
     public byte IdCarrera { get; set; }
     public bool IsActivo { get; set; }
     public DateTime FecRegistro { get; set; }
+
+    //descripcion de la carrera (viene del join con la tabla de carreras)
     public string Carrera { get; set; } = string.Empty;
 }

@@ -13,7 +13,7 @@ builder.Services.AddOpenApi();
 
 
 // Registrar DbContext (conexion a BD)
-builder.Services.AddSingleton<DbContext>();
+builder.Services.AddSingleton<ProgramasFacpya.Api.Data.DbContext>();
 
 // Registrar Services
 builder.Services.AddScoped<AlumnoService>();

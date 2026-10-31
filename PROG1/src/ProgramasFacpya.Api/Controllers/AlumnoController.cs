@@ -28,15 +28,21 @@ public class AlumnoController(AlumnoService service) : ControllerBase
         return Ok(await _service.Crear(dto));
     }
 
-    [HttpPut("Actualizar/{matricula}")]
-    public async Task<IActionResult> Actualizar(int matricula, [FromBody] ActualizarAlumnoDTO dto)
+    [HttpPut("Actualizar/{idAlumno}")]
+    public async Task<IActionResult> Actualizar(int idAlumno, [FromBody] ActualizarAlumnoDTO dto)
     {
-        return Ok(await _service.Actualizar(matricula, dto));
+        return Ok(await _service.Actualizar(idAlumno, dto));
     }
 
-    [HttpDelete("Eliminar/{matricula}")]
-    public async Task<IActionResult> Eliminar(int matricula)
+    [HttpDelete("Eliminar/{idAlumno}")]
+    public async Task<IActionResult> Eliminar(int idAlumno)
     {
-        return Ok(await _service.Eliminar(matricula));
+        return Ok(await _service.Eliminar(idAlumno));
+    }
+
+    [HttpGet("ObtenerPorId/{idAlumno:int}")]
+    public async Task<IActionResult> ObtenerPorId(int idAlumno)
+    {
+        return Ok(await _service.ObtenerPorId(idAlumno));
     }
 }
